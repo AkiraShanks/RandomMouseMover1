@@ -139,10 +139,10 @@ protected:
         CDialog::OnTimer(id);
     }
 
-    afx_msg void OnHotKey(WPARAM wParam, LPARAM)
+    afx_msg void OnHotKey(UINT nHotKeyId, UINT, UINT)
     {
-        if (wParam == HOTKEY_ON) StartMover();
-        if (wParam == HOTKEY_OFF) StopMover();
+        if (nHotKeyId == HOTKEY_ON) StartMover();
+        if (nHotKeyId == HOTKEY_OFF) StopMover();
     }
 
     afx_msg LRESULT OnTrayIcon(WPARAM, LPARAM event)

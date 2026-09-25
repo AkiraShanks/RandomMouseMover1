@@ -1,0 +1,11 @@
+#include "resource.h"
+#include <afxres.h>
+
+IDD_MAIN DIALOGEX 0, 0, 220, 70
+STYLE DS_SETFONT | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX
+CAPTION "Random Mouse Mover"
+FONT 9, "Segoe UI"
+BEGIN
+    PUSHBUTTON "Turn On", ID_BUTTON_ON, 15, 20, 85, 25
+    PUSHBUTTON "Turn Off", ID_BUTTON_OFF, 120, 20, 85, 25
+END
